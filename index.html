@@ -8,7 +8,7 @@
 </head>
 <body>
    <div class="container">
-     <nav>
+     <nav class="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -19,10 +19,10 @@
   <div class="left-column">     
     <img 
        src="https://media.licdn.com/dms/image/v2/D5603AQHdY9A7bm5yWw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1698119118963?e=1746057600&v=beta&t=s2eiCe1I5aRpNDn-I3WVBW9Ss-ugzsPjdmR9uUOENjk" alt="My picture"
-    />
+    /> 
     <H2>Sheriff Oyewusi (He/Him)</H2>
     <h4>Cybersecurity Analyst</h4>
-    <button>Contact</button>
+    <a href="#contact" target="_self"><button>Contact</button></a>
   </div>    
 <div class="right-column">
     <h1>About Me</h1>
@@ -32,7 +32,54 @@
   </div>
  </div>
 </div>
-    
+<section id="projects" class="projects-section">
+  <h2>My Projects</h2>
+  <div class="projects-container">
+
+      <div class="project-card">
+          <img src="https://via.placeholder.com/350" alt="Project 1">
+          <h3>Project One</h3>
+          <p>This project showcases my skills in wireframe and mockup</p>
+          <a href="#" class="btn">View Project</a>
+      </div>
+
+      <div class="project-card align-left">
+          <img src="https://via.placeholder.com/350" alt="Project 2">
+          <h3>Project Two</h3>
+          <p>This project showcases my skills in frontend development using HTML, and CSS.</p>
+          <a href="#" class="btn">View Project</a>
+      </div>
+
+      <div class="project-card">
+          <img src="https://via.placeholder.com/350" alt="Project 3">
+          <h3>Project Three</h3>
+          <p>This project showcases my skills in cybersecurity analysis with insights and detailed reporting.</p>
+          <a href="#" class="btn">View Project</a>
+      </div>
+  </div>
+</section>
+</div>
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form class="contact-form">
+      <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+
+      <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+  </form>
+</section>    
   
 </body>
 </html>
